@@ -58,4 +58,7 @@ form label {
 #roaming-acts-dropdown {
     padding-left: 20px;
 }
-
+.checked {
+    text-decoration: line-through;
+    color: #888; /* Optional: dim the color for completed items */
+}
