@@ -1,17 +1,21 @@
+/* Basic dark background and light text color */
 body {
     font-family: Arial, sans-serif;
+    background-color: #343541; /* Dark background similar to ChatGPT dark mode */
+    color: #e0e0e0; /* Light text for readability on dark background */
     margin: 0;
     padding: 0;
 }
 
+/* Tabs at the top for navigation */
 .tabs {
     display: flex;
     justify-content: space-around;
-    background-color: #333;
+    background-color: #444654; /* Slightly darker shade for the tabs */
 }
 
 .tabs button {
-    color: white;
+    color: #e0e0e0;
     background: none;
     border: none;
     padding: 15px;
@@ -19,10 +23,17 @@ body {
     font-size: 16px;
 }
 
+/* Styling for active and hover states on tabs */
+.tabs button:hover,
+.tabs button:focus {
+    background-color: #5f6369; /* Highlight on hover */
+}
+
 .tab-content {
     padding: 20px;
 }
 
+/* Table styling */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -32,24 +43,37 @@ table {
 th, td {
     padding: 10px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #555; /* Subtle line between rows */
 }
 
-h2 {
-    color: #333;
+th {
+    color: #e0e0e0;
 }
 
-.event.above-bar { background-color: #ffebcc; }
-.event.westquay { background-color: #d1f0ff; }
-.event.main-stage { background-color: #f9d1d1; }
-.event.guildhall { background-color: #e1e6ff; }
-.event.carlton-place { background-color: #f0e1ff; }
-.event.oxford-street { background-color: #e1ffe1; }
-.event.silent-disco { background-color: #ffedd1; }
-.event.art-gallery { background-color: #ffe1f1; }
-.event.marlands { background-color: #d1ffe1; }
-.event.roaming { background-color: #fff3d1; }
+/* Headings */
+h1, h2 {
+    color: #e0e0e0;
+}
 
+/* Colors for different locations */
+.event.above-bar { background-color: #4e5d6c; } /* Muted blue-gray */
+.event.westquay { background-color: #3b4a56; } /* Darker gray-blue */
+.event.main-stage { background-color: #58667a; } /* Subtle grayish navy */
+.event.guildhall { background-color: #3d4750; } /* Muted charcoal */
+.event.carlton-place { background-color: #495565; } /* Slightly darker blue-gray */
+.event.oxford-street { background-color: #4a5967; } /* Grayish slate */
+.event.silent-disco { background-color: #3f4c5c; } /* Darkened navy */
+.event.art-gallery { background-color: #3b4654; } /* Cool dark gray */
+.event.marlands { background-color: #3c4a5b; } /* Subtle gray-blue */
+.event.roaming { background-color: #394752; } /* Soft slate gray */
+
+/* Styling for checkboxes and strikethrough */
+.checked {
+    text-decoration: line-through;
+    color: #888888; /* Dimmed color for completed items */
+}
+
+/* Roaming tab checklist styling */
 form label {
     display: block;
     margin: 5px 0;
@@ -58,6 +82,7 @@ form label {
 #roaming-acts-dropdown {
     padding-left: 20px;
 }
+
 .checked {
     text-decoration: line-through;
     color: #888; /* Optional: dim the color for completed items */
