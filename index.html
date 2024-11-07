@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown to Christmas Schedule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tabs">
+        <button onclick="showTab('schedule')">View Schedule</button>
+        <button onclick="showTab('checklist')">Checklist</button>
+    </div>
+
+    <!-- Schedule Tab -->
+    <div id="schedule" class="tab-content">
+        <h1>Event Schedule</h1>
+        
+        <!-- Friday Schedule -->
+        <h2>Friday</h2>
+        <table>
+            <tr><th>Time</th><th>Act</th><th>Location</th></tr>
+            <tr class="above-bar"><td>4:30 PM</td><td>Roaming Street Theatre</td><td>Above Bar, West Quay, Marlands, Guildhall Square, Below Bar</td></tr>
+            <tr class="westquay"><td>5:00 PM</td><td>Bitterne Park Primary School</td><td>Westquay Downstairs</td></tr>
+            <tr class="westquay"><td>5:15 PM</td><td>City of Albion Brass Band</td><td>Westquay South Terrace</td></tr>
+            <tr class="main-stage"><td>6:00 PM</td><td>The Love Soul Choir</td><td>Main Stage</td></tr>
+            <tr class="westquay"><td>6:20 PM</td><td>Southampton Rock Choir</td><td>Westquay Downstairs</td></tr>
+            <tr class="westquay"><td>6:30 PM</td><td>Southampton Ukelele Jam</td><td>Westquay South Terrace</td></tr>
+            <tr class="main-stage"><td>6:40 PM</td><td>Russell Jones Swing</td><td>Main Stage</td></tr>
+            <tr class="main-stage"><td>6:55 PM</td><td>The Big Movement Appeal</td><td>Main Stage</td></tr>
+            <tr class="main-stage"><td>7:00 PM</td><td>The Gentlemen Juggler</td><td>Main Stage</td></tr>
+            <tr class="main-stage"><td>7:20 PM</td><td>T-Shirt Gun</td><td>Main Stage</td></tr>
+            <tr class="main-stage"><td>7:25 PM</td><td>Sydnie Christmas</td><td>Main Stage</td></tr>
+            <tr class="westquay"><td>7:40 PM</td><td>Southampton Rock Choir</td><td>Westquay South Terrace</td></tr>
+            <tr class="main-stage"><td>8:00 PM</td><td>Projection Switch On</td><td>Main Stage</td></tr>
+            <tr class="guildhall"><td>8:15 PM</td><td>Christmas Mariachi</td><td>Guildhall Square</td></tr>
+            <tr class="carlton-place"><td>8:30 PM</td><td>Magic Leon</td><td>Carlton Place</td></tr>
+            <tr class="guildhall"><td>9:00 PM</td><td>Fairground</td><td>Guildhall Square</td></tr>
+        </table>
+
+        <!-- Saturday Schedule -->
+        <h2>Saturday</h2>
+        <table>
+            <tr><th>Time</th><th>Act</th><th>Location</th></tr>
+            <tr class="westquay"><td>11:30 AM</td><td>Sound Pop Academy</td><td>Westquay Downstairs</td></tr>
+            <tr class="marlands"><td>12:00 PM</td><td>Sophie Edge</td><td>Marlands Entrance</td></tr>
+            <tr class="marlands"><td>12:15 PM</td><td>Elves Behavin' Badly</td><td>Marlands Stage</td></tr>
+            <tr class="marlands"><td>1:00 PM</td><td>Harriet Jane</td><td>Marlands Entrance</td></tr>
+            <tr class="art-gallery"><td>1:30 PM</td><td>Make a Christmas Gonk</td><td>Art Gallery</td></tr>
+            <tr class="westquay"><td>2:00 PM</td><td>Sophie Edge</td><td>Westquay Entrance</td></tr>
+            <tr class="westquay"><td>2:30 PM</td><td>Paddington</td><td>Westquay South</td></tr>
+            <tr class="westquay"><td>3:00 PM</td><td>Harriet Jane</td><td>Westquay Entrance</td></tr>
+            <tr class="oxford-street"><td>6:00 PM</td><td>Magic Leon</td><td>Oxford Street</td></tr>
+            <tr class="silent-disco"><td>6:20 PM</td><td>Silent Disco</td><td>Bargate South</td></tr>
+            <tr class="oxford-street"><td>7:00 PM</td><td>Christmas Mariachi</td><td>Oxford Street</td></tr>
+            <tr class="oxford-street"><td>8:00 PM</td><td>The Waiters</td><td>Oxford Street</td></tr>
+        </table>
+
+        <!-- Sunday Schedule -->
+        <h2>Sunday</h2>
+        <table>
+            <tr><th>Time</th><th>Act</th><th>Location</th></tr>
+            <tr class="marlands"><td>12:00 PM</td><td>The Jukebox Jazz Man</td><td>Marlands Entrance</td></tr>
+            <tr class="watts-park"><td>1:30 PM</td><td>Christmas Tree Climbing</td><td>Watts Park</td></tr>
+            <tr class="guildhall"><td>1:00 PM</td><td>Magic Leon</td><td>Guildhall Square</td></tr>
+            <tr class="westquay"><td>1:45 PM</td><td>Polar Bear</td><td>Westquay Downstairs</td></tr>
+            <tr class="westquay"><td>2:00 PM</td><td>The Jukebox Jazz Man</td><td>Westquay Entrance</td></tr>
+            <tr class="westquay"><td>2:45 PM</td><td>Polar Bear</td><td>Westquay Downstairs</td></tr>
+            <tr class="roaming"><td>3:00 PM</td><td>Market Roaming</td><td>Everywhere</td></tr>
+        </table>
+    </div>
+
+    <!-- Checklist Tab -->
+    <div id="checklist" class="tab-content" style="display: none;">
+        <h1>Checklist</h1>
+        <form id="checklist-form">
+            <label><input type="checkbox" id="roaming-acts"> Roaming Acts</label>
+            <div id="roaming-acts-dropdown" style="display: none;">
+                <label><input type="checkbox" id="ghost-caribou"> Ghost Caribou</label>
+                <label><input type="checkbox" id="bouncing-snowmen"> Bouncing Snowmen</label>
+                <label><input type="checkbox" id="curiosity-christmas-tree"> Curiosity Christmas Tree</label>
+                <!-- Add other roaming acts as needed -->
+            </div>
+            <label><input type="checkbox" id="bitterne-school"> Bitterne Park Primary School</label>
+            <label><input type="checkbox" id="city-brass-band"> City of Albion Brass Band</label>
+            <!-- Add remaining acts from the schedule -->
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
