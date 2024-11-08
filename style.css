@@ -11,7 +11,7 @@ body {
 .tabs {
     display: flex;
     justify-content: space-around;
-    background-color: #171717; /* Slightly darker shade for the tabs */
+    background-color: #f4364c; /* Slightly darker shade for the tabs */
 }
 
 .tabs button {
@@ -26,7 +26,7 @@ body {
 /* Styling for active and hover states on tabs */
 .tabs button:hover,
 .tabs button:focus {
-    background-color: #5f6369; /* Highlight on hover */
+    background-color: #f4364c; /* Highlight on hover */
 }
 
 .tab-content {
